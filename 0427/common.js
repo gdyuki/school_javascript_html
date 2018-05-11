@@ -75,7 +75,7 @@ for(var i = 1; i <= 100; i++){
     console.log(i, o);
   }
 }
-for(var i = 1900; i<= 2100; i +=4){
+/*for(var i = 1900; i<= 2100; i +=4){
   if(i%100 === 0){
     if(i%400 === 0){
       console.log(i);
@@ -83,5 +83,9 @@ for(var i = 1900; i<= 2100; i +=4){
   }else{
     console.log(i);
   }
+}*/
+for(var i = 1900; i <= 2100; i += 4){
+  if(i%100 !== 0 || i%400 === 0){
+    console.log(i);
   }
-  
+}

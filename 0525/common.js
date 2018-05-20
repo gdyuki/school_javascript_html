@@ -148,10 +148,9 @@ for(var i = 0; i < users.length; i++){
   var user = users[i]
   var age = user.age
   if(age < 20){
-    u.young.push(user.name)
-    console.log('young; '+user.name);
+    u.young.push(user)
   }else{
-    u.old.push(user.name)
-    console.log('old; '+user.name);
+    u.old.push(user)
   }
 }
+console.log();

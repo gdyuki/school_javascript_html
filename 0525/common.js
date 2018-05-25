@@ -10,7 +10,7 @@ console.log(name.charAt(4));
 console.log(name.charAt(5));
 
 console.log(name.slice(1,6));
-console.log(name.slice(-3,name.length));
+console.log(name.slice(-4,name.length));
 
 console.log(name.indexOf('Y'));
 
@@ -139,7 +139,7 @@ for(var i = 0; i < users.length; i++){
   console.log('['+user.name+']' , ' age:'+user.age , ' sex:'+user.sex);
   //console.log(('['+'name'+']'+'age:'+age+', '+'sex:'+sex));
 }
-
+/////////filteredUsers old or young ///////////
 var u ={
   old: [],
   young: []
@@ -151,6 +151,68 @@ for(var i = 0; i < users.length; i++){
     u.young.push(user)
   }else{
     u.old.push(user)
+  }
+}
+console.log();
+/////////filteredUsers female or male/////////
+var filteredUsers = {
+  male:[],
+  female:[]
+}
+
+for(var i = 0; i < users.length; i++){
+  var user = users[i];
+  var sex = user.sex ==='male' ? 'male' : 'female'
+  filteredUsers[sex].push(user)
+}
+console.log(filteredUsers);
+
+////////////function /////////
+function test(){
+  console.log('test');
+}
+test()
+function addNum(num1, num2){
+  var addNum = num1 + num2
+}
+console.log(addNum(1, 20));
+
+function getAddNum(num1, num2){
+  var addNum = num1 + num2
+  return addNum
+}
+console.log(addNum(10, 2));
+console.log(getAddNum(10, 2));
+console.log(typeof getAddNum(10, 2));
+////////Plus all Ary number /////////////
+var numAry = [1, 2, 3, 4, 5]
+function getTotalNum(){
+  var num1 = 0
+  for(var i = 0; i < numAry.length; i++){
+    num1 += numAry[i]
+  }
+  return num1
+}
+console.log('total : '+getTotalNum());
+///////Over 4 is cut , and plus '...'//////////
+function shortStr(string1){
+  string2 = '...'
+  if(string1.length >= 5){
+    string1 = string1.slice(0, 4);
+    string1 += string2
+  }
+  return string1
+}
+console.log(shortStr('aaaaaaaa'));
+console.log(shortStr('aaa'));
+////////// 3 num and , ////////////////
+function cutthree(num1){
+  num1 = num1.toString()
+  numlen = num1.length
+
+  num1.slice(-3, numlen)
+  for(var i = -numlen; i < 0; i++){
+
   }
 }
 console.log();

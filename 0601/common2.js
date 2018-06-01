@@ -205,14 +205,28 @@ function shortStr(string1){
 }
 console.log(shortStr('aaaaaaaa'));
 console.log(shortStr('aaa'));
-////////// 3 num and , ////////////////
-function cutthree(num1){
-  num1 = num1.toString()
-  numlen = num1.length
 
-  num1.slice(-3, numlen)
-  for(var i = -numlen; i < 0; i++){
-    
-  }
+/////////Math //////////////////////////////////
+console.log(Math.random());
+console.log(Math.floor(2.8));
+
+var random1 = Math.floor(Math.random() * 10)
+console.log(random1);
+
+var random2 = Math.floor(Math.random() * 8 + 3 )
+console.log(random2);
+
+function randomNum(num1, num2){
+  num2 = num2 - num1 + 1
+  console.log(Math.floor(Math.random() * num2 + num1 ));
 }
-console.log();
+randomNum(3, 12)
+
+console.log(Math.ceil(1.8));
+console.log(Math.round(1.8));
+console.log(Math.min(1,2,3,4,5));
+console.log(Math.max(1,2,3,4,5));
+//ary max
+Math.max.apply(null, [ 5, 7, 4, 9, 1])
+console.log(Math.max(0, -1));
+console.log(Math.min(10, 100));

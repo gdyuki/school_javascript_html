@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .contents.on{
-  background-color: #eee
+  background-color: #eee;
 }
 .contents .item{
   height: 0;

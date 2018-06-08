@@ -19,3 +19,9 @@ console.log(content_button, contents);
 content_button.on('click', function(){
   contents.toggleClass('on');
 })
+
+
+var count = $('.count')
+var countNum = localStorage.getItem('count') || Math.floor(Math.random() * 10000)
+localStorage.setItem('count', ++countNum);
+count.html(countNum)

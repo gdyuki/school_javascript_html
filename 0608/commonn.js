@@ -21,6 +21,7 @@ content_button.on('click', function(){
 })
 
 
+
 var count = $('.count')
 var countNum = localStorage.getItem('count') || Math.floor(Math.random() * 10000)
 localStorage.setItem('count', ++countNum);

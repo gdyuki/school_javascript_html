@@ -1,10 +1,56 @@
 @charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color: #2e2e2e;
+}
+.tabMenu{
+  display: flex;
+}
+.tabControle{
+  width: 100%;
+  display: flex;
+  border: 1px solid #2e2e2e;
+  justify-content: space-between;
+}
+.tabControle .prev{
+  border-right: 1px solid #000;
+  background-color: white;
+  width: 10%;
+  display: block;
+}
+.tabControle .next{
+  border-left: 1px solid #2e2e2e;
+  background-color: white;
+  color: #2e2e2e;
+  width: 10%;
+  list-style: none;
+  display: block;
+}
+.tabControle .next:hover{
+  background-color: yellow;
+}
+
+.tabmenuItem{
+  text-align: center;
+  display: block;
+  width: 25%;
+  font-size: 16px;
+  background-color: #2e2e2e;
+  color: #efefef;
+  border-top: 1px solid  #2e2e2e;
+}
 .tabmenuItem.on{
-  border: 1px solid red;
+  background-color: #efefef;
+  color: #2e2e2e;
 }
 .tabItem{
   display: none;
 }
 .tabItem.on{
-  display: block;   
+  display: block;
+  width: 100%;
+  background-color: #efefef;
 }

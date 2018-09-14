@@ -1,0 +1,21 @@
+@charset "UTF-8";
+*{
+  background: #2e2e2e;
+  margin: 0;
+  padding: 0;
+}
+.clock_m{
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.clock_h{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  bottom: 400px;
+  left: 100px;
+}
+.clock_box{
+  margin: 20px;
+}
